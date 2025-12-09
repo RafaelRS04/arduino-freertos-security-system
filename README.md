@@ -75,6 +75,8 @@ The system logic is driven by `current_state` in the FSM task:
 * **ATTEMPTS_BLOCKED**: Temporary lockout state after too many wrong passwords.
 * **BLOCKED**: Permanent lockout state (requires reset or master intervention) if intrusion is confirmed.
 
+![State Diagram](state-diagram.png)
+
 ## Pinout Configuration
 
 Defined in `main.cpp`:
@@ -91,3 +93,8 @@ Defined in `main.cpp`:
 | **Alarm LED** | 6 |
 | **Buzzer** | 5 |
 | **LDR Sensor** | A0 |
+
+## Contributors
+
+* [**RafaelRS04**](https://github.com/RafaelRS04) – **Firmware Developer**: Responsible for the system architecture, firmware development and system implementation.
+* [**CarlosE-Ribeiro**](https://github.com/CarlosE-Ribeiro) – **Hardware Concept**: Responsible for the project conception and physical assembly of the circuit.
