@@ -475,6 +475,10 @@ void vTaskFSM(void *pvParameters) {
                 isStateChange = false;
             }
 
+            if(!isAlarmActivated && xVerifySensors()) {
+                vActivateAlarm();
+            }
+
             if(key == '#') {
                 attempts++;
 
